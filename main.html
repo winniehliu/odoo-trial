@@ -18,7 +18,7 @@
       <a class="navbar-brand" href="#">
         <img src="./assets/odoo-white.svg" width="100">
       </a>
-      <div class="col col-8 collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <div class="col col-8 collapse navbar-collapse justify-content-center p-0" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
@@ -38,7 +38,7 @@
         </ul>
         <div class="my-2 my-lg-0">
           <button class="btn btn-outline-light">Sign in</button>
-          <button class="btn btn-light">Buy now</button>
+          <button class="btn btn-light"><i class="bi-bag"></i> Buy now</button>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
         <div class="col text-white mr-5">
           <h1>Development done right</h1>
           <p>Build a beautiful, modern website with flexible components built from scratch.</p>
-          <button type="button" class="btn btn-light"> Get started </button>
+          <button type="button" class="btn btn-light"> Get started <i class="bi-plus"></i></button>
           <div class="d-flex justify-content-between py-3">
             <span>Trusted by:</span>
             <img src="./assets/google-white.svg" width="75">
@@ -58,8 +58,8 @@
             <img src="./assets/paypal-white.svg" width="75">
           </div>
         </div>
-        <div class="col">
-          <div class="container bg-white py-5 rounded w-75">
+        <div class="col d-flex justify-content-end">
+          <div class="bg-white p-3 rounded" style="width:350px;">
             <div class="d-flex justify-content-between pb-3">
               <b>Manage cards</b>
               <button class="btn btn-outline-dark"> Add Now</button>
@@ -118,14 +118,70 @@
             </div>
             <div class="pt-3"><a href="#">View all</a></div>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row align-items-center py-5">
-      <div class="col">
-        <img src="./assets/img_01.jpg" class="w-50 rounded">
+      <div class="col d-flex flex-row align-items-center">
+        <div class="card" style="width:300px; z-index:-1;">
+          <div class="card-body d-flex flex-column">
+            <span><h6>
+              Awesome project
+            </h6>
+            </span>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>
+                  Create the new logo
+                </span>
+                <span>
+                  3:50
+                  <i class="bi-chevron-right"></i>
+                </span>
+              </div>
+              <div class="progress" style="height:3px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 35%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>
+                  Set up the color palette
+                </span>
+                <span>
+                  4:00
+                  <i class="bi-chevron-right"></i>
+                </span>
+              </div>
+              <div class="progress" style="height:3px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>
+                  Wireframe and prototype
+                </span>
+                <span>
+                  6:50
+                  <i class="bi-chevron-right"></i>
+                </span>
+              </div>
+              <div class="progress" style="height:3px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div style=" margin-left:-200px; margin-bottom:150px; position:relative; display:inline-block">
+          <button class="btn btn-light" style="position:absolute; right: 10px; top:10px;">Play video <i class="bi-play"></i></button>
+          <img src="./assets/img_01.jpg" class="rounded" style="width:250px;">
+        </div>
       </div>
       <div class="col">
         <span class="badge badge-pill badge-warning">Tools</span>
@@ -133,28 +189,93 @@
         <p>Get components and examples, including tons of variables that will help you grow your business</p>
       </div>
     </div>
-    <div class="row align-items-center py-5">
-      <div class="col">
-        <span class="badge badge-pill badge-success">Features</span>
-        <h1>Get components and examples, including tons of variables that will help you grow your business</h1>
-        <p>Perfect for modern startups</p>
-        <p>Fully customizable and scalable</p>
-      </div>
-      <div class="col bg-image">
-        <img src="./assets/img_02.jpg" class="w-100 rounded">
-      </div>
+    <div class="row d-flex justify-content-center" style="margin-top:-5rem; margin-bottom:-5rem; transform: scaleX(-1);z-index:-1;">
+      <img src="./assets/curved.svg">
     </div>
     <div class="row align-items-center py-5">
       <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="./assets/person_03.jpg">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <span>
-                <span class="rounded-circle bg-warning">JH</span>
-                <span>Jimmy Hendrix</span>
+        <span class="badge badge-pill badge-success">Features</span>
+        <div class=" d-flex flex-column">
+          <h3>Get components and examples, including tons of variables that will help you grow your business</h3>
+          <span>
+            <i class="bi-check-square-fill"></i>Perfect for modern startups
+          </span>
+          <span>
+            <i class="bi-check-square-fill"></i>Fully customizable and scalable
+          </span>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div style="position:relative; display:inline-block">
+          <button class="btn btn-light" style="position:absolute; left: 10px; top:10px;">Play video <i class="bi-play"></i></button>
+          <img src="./assets/img_02.jpg" class="w-100 rounded">
+        </div>
+        
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center" style="margin-top:-5rem; margin-bottom:-5rem;z-index:-1;">
+      <img src="./assets/curved.svg">
+    </div>
+    <div class="row align-items-center py-5">
+      <div class="col d-flex flex-row align-items-center">
+        <div class="d-flex flex-column mr-3" style="width: 18rem;">
+          <div class="card mb-3">
+            <img class="card-img-top" src="./assets/person_03.jpg">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <span>
+                  <span class="rounded-circle bg-warning">JH</span>
+                  <span>Jimmy Hendrix</span>
+                </span>
+                <i class="bi-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body d-flex align-items-center">
+              <span class="rounded-circle bg-success p-2"><i class="bi-check"></i>
               </span>
-              <i class="bi-heart"></i>
+              <div class="d-flex flex-column mx-3">
+                <span><b>300+ components</b></span>
+                <span>Built to be customized.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column" style="width: 18rem;">
+          <div class="card mb-3 py-3">
+            <div class="card-body d-flex flex-column align-items-center">
+              <span class="mb-3" style="width:5rem;">
+                <img src="./assets/airbnb.svg">
+              </span>
+              <span class="mb-3">
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+              </span>
+              <span><b>4.95 out of 5 stars</b></span>
+              <span>from 23 reviews</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="mb-3">
+                <img  class="rounded-circle" style="width:3rem;" src="./assets/company_01.png">
+              </div>
+              <span><b>Website UI Kit</b></span>
+              <span class="my-3">
+                <img class="rounded-circle border border-white mn-3" style="width:2rem; margin:-7px;" src="./assets/person_01.jpg">
+                <img class="rounded-circle border border-white mn-1" style="width:2rem; margin:-7px;" src="./assets/person_02.jpg">
+                <img class="rounded-circle border border-white mn-1" style="width:2rem; margin:-7px;" src="./assets/person_03.jpg">
+              </span>
+              <span class="border-top pt-3">
+                <i class="bi-paperclip px-2"></i>
+                <i class="bi-eye px-2"></i>
+                <i class="bi-heart px-2"></i>
+              </span>
             </div>
           </div>
         </div>
@@ -166,59 +287,324 @@
         <a class="link-success" href="#">See case studies</a>
       </div>
     </div>
+    <div class="row d-flex justify-content-center" style="margin-top:-5rem; margin-bottom:-5rem; transform: scaleX(-1);z-index:-1;">
+      <img src="./assets/curved.svg">
+    </div>
     <div class="row align-items-center py-5">
       <div class="col">
         <span class="badge badge-pill badge-warning">Easy to install</span>
         <h1>Download, install and run.</h1>
         <p>Get components and examples, including tons of variables that will help you grow your business.</p>
       </div>
-      <div class="col bg-image">
-        <img src="./assets/img_03.jpg" class="w-100 rounded">
+      <div class="col">
+        <div style="position:relative; display:inline-block">
+          <button class="btn btn-light" style="position:absolute; left: 10px; top:10px;">Play video <i class="bi-play"></i></button>
+          <img src="./assets/img_03.jpg" class="w-100 rounded">
+        </div>
+        
       </div>
     </div>
   </div>
-  <div class="container py-5 bg-dark rounded">
-    <div class="d-flex justify-content-between align-items-center px-5">
-      <div>
-        <h3>Infinite solutions</h3>
-        <p>Intuitive markup, powerful and lighting gast build tools, everything you need to turn your ideas into
-          incredible products.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex flex-row justify-content-between align-items-center bg-dark rounded px-5 py-5 my-5">
+          <span class="w-50">
+            <h3>Infinite solutions</h3>
+            <p>Intuitive markup, powerful and lighting gast build tools, everything you need to turn your ideas into
+            incredible products.</p>
+            </span>
+          <span>
+            <button class="btn btn-light">Learn more <i class="bi-arrow-right-short"></i></button>
+          </span>
+        </div>
       </div>
-      <span>
-        <button class="btn btn-light">Learn more</button>
-      </span>
+      
+      
     </div>
   </div>
-  <div class="container py-5">
-    <div class="row">
-      <span class="badge badge-pill badge-primary">Awards</span>
-    </div>
-    <div class="row">
-      <b>Awards of design, creativity and innovation on the internet.</b>
+  <div style="background-color: aliceblue;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <span class="badge badge-pill badge-primary">Awards</span>
+          <div class="py-3">
+            <b>Awards of design, creativity and innovation on the internet.</b>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col d-flex flex-row my-5">
+          <div class="card mb-3 py-3 mr-3 mt-3"  style="width:12rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <span style="width:5rem;">
+                <img src="./assets/airbnb.svg">
+              </span>
+              <span class="my-3">
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+              </span>
+              <span><b>4.95 out of 5 stars</b></span>
+              <span>from 23 reviews</span>
+            </div>
+          </div>
+          <div class="card mb-5 py-3 mr-3" style="width:12rem;">
+            <div class="card-body d-flex flex-column align-items-center">
+              <span class="mb-3" style="width:5rem;">
+                <img src="./assets/amazon.svg">
+              </span>
+              <span class="mb-3 text-center">
+                They build modern looking websites easily using Tabs.
+              </span>
+              <span><a link href="#">Learn more</a> </span>
+            </div>
+          </div>
+          <div class="card mb-3 py-3 mr-3 mt-3" style="width:12rem;">
+            <div class="card-body d-flex flex-column align-items-center">
+              <span class="mb-3" style="width:5rem;">
+                <img src="./assets/slack.svg">
+              </span>
+              <span class="mb-3 text-center">
+                They build modern looking websites easily using Trello.
+              </span>
+              <span><a link href="#">Learn more</a> </span>
+            </div>
+          </div>
+          <div class="card mb-5 py-3 mr-3"  style="width:12rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <span style="width:5rem;">
+                <img src="./assets/spotify.svg">
+              </span>
+              <span class="my-3">
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+                <i class="bi-star"></i>
+              </span>
+              <span><b>4.95 out of 5 stars</b></span>
+              <span>from 23 reviews</span>
+            </div>
+          </div>
+          <div class="card mb-3 py-3 mr-3 mt-3" style="width:12rem;">
+            <div class="card-body d-flex flex-column align-items-center">
+              <span class="mb-3" style="width:5rem;">
+                <img src="./assets/paypal.svg">
+              </span>
+              <span class="mb-3 text-center">
+                They build modern looking websites easily using Docker.
+              </span>
+              <span><a link href="#">Learn more</a> </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  
   <div class="container py-5">
     <h1 class="text-center">Helpful answers</h1>
     <p class="text-center">Start building fast, beautiful and modern looking websites in no time.</p>
+    <div class="row">
+      <div class="col">
+        
+        <div class="my-3">
+          <div class="card card-body"  data-toggle="collapse" data-target="#accordion1" aria-expanded="false" aria-controls="accordion1">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-file-earmark"></i>
+                How do I get access to my database?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion1">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3">
+          <div class="card card-body" data-toggle="collapse" data-target="#accordion2" aria-expanded="false" aria-controls="accordion2">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-unlock"></i>
+                How do I get access to my database?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion2">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3">
+          <div class="card card-body"  data-toggle="collapse" data-target="#accordion3" aria-expanded="false" aria-controls="accordion3">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-folder"></i>
+                How do I see previous orders?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion3">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="my-3">
+          <div class="card card-body"  data-toggle="collapse" data-target="#accordion4" aria-expanded="false" aria-controls="accordion4">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-file-earmark"></i>
+                How do I get access to my database?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion4">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3">
+          <div class="card card-body" data-toggle="collapse" data-target="#accordion5" aria-expanded="false" aria-controls="accordion5">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-unlock"></i>
+                How do I get access to my database?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion5">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3">
+          <div class="card card-body"  data-toggle="collapse" data-target="#accordion6" aria-expanded="false" aria-controls="accordion6">
+            <div class="d-flex justify-content-between">
+              <span>
+                <i class="bi-folder"></i>
+                How do I see previous orders?
+              </span>
+              <i class="bi-plus"></i>
+            </div>
+          </div>
+        
+          <div class="collapse" id="accordion6">
+            <div class="p-4">
+              Which license do I really need?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </div>
   <div class="container py-5">
     <h3 class="text-center">I want to start a new project.</h3>
     <div class="d-flex justify-content-center">
-      <button class="btn btn-primary">Buy now</button>
+      <button class="btn btn-primary">Buy now <i class="bi-arrow-right-short"></i></button>
       <button class="btn btn-light">Learn more</button>
     </div>
   </div>
   <div class="footer bg-dark">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col">
           <h3>Brilliant solutions for your ideas</h3>
           <p>Modern looking websites.</p>
         </div>
         <div>
-          <button class="btn btn-light">Documentation</button>
+          <button class="btn btn-light"><i class="bi-journals"></i> Documentation</button>
           <button class="btn btn-primary">Purchase now</button>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col">
+          <div class="d-flex flex-column">
+            <img src="./assets/odoo-white.svg" style="width:8rem;">
+            <p>
+              Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+            </p>
+            <span>
+              <i class="bi-twitter"></i>
+              <i class="bi-github"></i>
+              <i class="bi-instagram"></i>
+              <i class="bi-facebook"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-row justify-content-between">
+          <div class="d-flex flex-column">
+            <b>Account</b>
+            <a link href="#">Profile</a>
+            <a link href="#">Settings</a>
+            <a link href="#">Billing</a>
+            <a link href="#">Notifications</a>
+          </div>
+
+          <div class="d-flex flex-column">
+            <b>About</b>
+            <a link href="#">Services</a>
+            <a link href="#">Pricing</a>
+            <a link href="#">Contact</a>
+            <a link href="#">Careers</a>
+          </div>
+
+          <div class="d-flex flex-column">
+            <b>Company</b>
+            <a link href="#">Community</a>
+            <a link href="#">Help center</a>
+            <a link href="#">Support</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex flex-row justify-content-between">
+          <span>
+            © <b>Odoo.</b> All rights reserved
+          </span>
+          <span>
+            <span>
+              <a link href="#">Terms</a>
+            </span>
+
+            <span>
+              <a link href="#">Privacy</a>
+            </span>
+
+            <span>
+              <a link href="#">Cookies</a>
+            </span>
+          </span>
         </div>
       </div>
     </div>

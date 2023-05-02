@@ -13,7 +13,8 @@ $enable-gradients: true;
 
 $body-color: #152B5A;
 
-$border-radius: (.3rem);
+$border-radius: (.75rem);
+$btn-border-radius: (.3rem);
 $border-width: (0.1px);
 $border-colour: (rgba(133, 133, 133, 0.09));
 
@@ -29,6 +30,27 @@ $badge-pill-padding-x: 1rem;
 .card {
   @extend .blur-shadow;
 }
+
+.card-brand {
+  @extend .card;
+  @extend .card-body;
+  @extend .p-5;
+  @extend .rounded;
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .align-items-center;
+  @extend .text-center;
+  width: 15rem;
+}
+
+
+.navbar {
+  @extend .subtitle;
+}
+.card-brand-logo {
+  width:7rem;
+}
+
 
 .pill-title {
   padding-top:2px;
@@ -73,6 +95,25 @@ $badge-pill-padding-x: 1rem;
 .vertical-padding {
   @extend .my-3;
 }
+
+.hr-gradient {
+  background: linear-gradient(.25turn, theme-color("dark-purple"), theme-color("light-grey"), theme-color("dark-purple"));
+  opacity: 0.5;
+}
+
+.outline-grey {
+  border: 2px solid theme-color("grey-blue");
+}
+
+.accordion {
+  font-weight:500;
+  cursor: pointer;
+}
+
+.accordion i:first-child{
+  @extend .mr-3;
+}
+
 @mixin link-underline-variant($parent, $color, $ignore-warning: false) {
   #{$parent} {
     color: $color !important;
@@ -142,4 +183,79 @@ div.footer hr {
 
 .slanted-edge-top {
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.content-left {
+  @extend .pr-5;
+  @extend .mr-5;
+  @extend .py-5;
+}
+
+.content-right {
+  @extend .pl-5;
+  @extend .ml-5;
+  @extend .py-5;
+}
+
+.connector {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  position:relative; 
+  margin-top:-5rem; 
+  margin-bottom:-5rem; 
+  height: 180px;
+  opacity: 0.5;
+  z-index:-1;
+}
+
+.connector-flip {
+  @extend .connector;
+  transform: scaleX(-1);
+}
+
+.cards {
+  padding-top: 75px;
+  overflow-y:visible;
+  flex-flow:row nowrap;
+}
+
+
+.card-hover:nth-child(even) {
+  margin-top:-50px;
+}
+
+.card-hover {
+  float:left; 
+  flex-shrink:0;
+  flex-grow:0;
+}
+
+.card-hover:hover{
+  border: 2px solid theme-color("grey-blue") !important;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.cards div{
+  
+  display:inline-block; /* important */
+}
+
+.cards, .card-list{
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  transition: 2s;     
+  
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+
+.cards{
+  overflow: hidden;
+}
+
+.cards:hover .card-list{
+  margin-left: -300px;
 }
